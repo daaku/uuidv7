@@ -1,0 +1,26 @@
+{
+  "name": "@daaku/uuidv7",
+  "author": "Naitik Shah <n@daaku.org>",
+  "version": "0.1.0",
+  "description": "Generate a UUIDv7 as a string.",
+  "repository": "git@github.com:daaku/uuidv7",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "deploy": "npm publish --access=public",
+    "prepare": "tsc"
+  },
+  "keywords": ["uuid", "uuidv7"],
+  "peerDependencies": {
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.4"
+  }
+}
