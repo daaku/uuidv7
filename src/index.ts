@@ -6,6 +6,7 @@ let cursor = BUFFER_LENGTH
 let counter = 0
 let lastTS = 0
 
+// buffered crypto reads for improved performance
 const randUint32 = () => {
   if (cursor === BUFFER_LENGTH) {
     crypto.getRandomValues(buffer)
@@ -22,7 +23,7 @@ const resetCounter = () => {
  * Generate a UUIDv7 string.
  *
  * The string is encoded using Crockford's Base32, will always be 26
- * characters in length, and is lexicographically sortable.
+ * characters in length, and are lexicographically sortable.
  *
  * Optionally specify the timestamp. Defaults to now.
  *
