@@ -7,7 +7,7 @@ test('generate some ids', () => {
     ids.push(uuidv7())
   }
 
-  ids.map(id => expect(id).toHaveLength(32))
+  ids.map(id => expect(id).toHaveLength(26))
   expect(new Set(ids)).toHaveLength(ids.length)
   expect(ids.toSorted()).toEqual(ids)
 })
