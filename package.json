@@ -1,7 +1,7 @@
 {
   "name": "@daaku/uuidv7",
   "author": "Naitik Shah <n@daaku.org>",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generate a UUIDv7 as a Base32 encoded, URL safe, lexicographically sortable string.",
   "repository": "git@github.com:daaku/uuidv7",
   "license": "MIT",
@@ -16,7 +16,10 @@
     "deploy": "npm publish --access=public",
     "prepare": "tsc"
   },
-  "keywords": ["uuid", "uuidv7"],
+  "keywords": [
+    "uuid",
+    "uuidv7"
+  ],
   "devDependencies": {
     "@types/bun": "^1.0.4",
     "typescript": "^5.0.2"
