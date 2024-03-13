@@ -16,14 +16,9 @@
     "deploy": "npm publish --access=public",
     "prepare": "tsc"
   },
-  "keywords": [
-    "uuid",
-    "uuidv7"
-  ],
-  "peerDependencies": {
-    "typescript": "^5.0.2"
-  },
+  "keywords": ["uuid", "uuidv7"],
   "devDependencies": {
-    "@types/bun": "^1.0.4"
+    "@types/bun": "^1.0.4",
+    "typescript": "^5.0.2"
   }
 }
