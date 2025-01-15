@@ -2,5 +2,5 @@
 /bun.lockb
 /bunfig.toml
 /dist/*test*
-/src
+/src/*test*
 /tsconfig.json
