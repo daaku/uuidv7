@@ -13,7 +13,6 @@
     }
   },
   "scripts": {
-    "deploy": "npm publish --access=public",
     "prepare": "tsc"
   },
   "keywords": [
