@@ -8,6 +8,7 @@
     "rootDir": "src",
     "skipLibCheck": true,
     "sourceMap": true,
-    "target": "esnext"
+    "target": "esnext",
+    "types": ["bun"]
   }
 }
