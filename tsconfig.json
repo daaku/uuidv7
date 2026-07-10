@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "target": "esnext",
-    "types": ["bun"]
+    "allowImportingTsExtensions": true,
+    "types": ["node"]
   }
 }

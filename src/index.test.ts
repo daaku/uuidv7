@@ -1,5 +1,6 @@
-import { expect, test } from 'bun:test'
-import { uuidv7 } from '../src/index.js'
+import { deepEqual } from 'node:assert/strict'
+import { test } from 'node:test'
+import { uuidv7 } from '../src/index.ts'
 
 test('generate some ids', () => {
   const ids = []
@@ -7,7 +8,7 @@ test('generate some ids', () => {
     ids.push(uuidv7())
   }
 
-  ids.map(id => expect(id).toHaveLength(26))
-  expect(new Set(ids)).toHaveLength(ids.length)
-  expect(ids.toSorted()).toEqual(ids)
+  ids.map(id => deepEqual(id.length, 26))
+  deepEqual((new Set(ids)).size, ids.length)
+  deepEqual(ids.toSorted(), ids)
 })
